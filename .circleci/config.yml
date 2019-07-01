@@ -37,5 +37,8 @@ jobs:
       - run: yarn extractor
       - run: yarn builder
       - run: git add README.md
+      - run: git config --global -l
+      - run: git config --global user.email circleci@circleci
+      - run: git config --global user.name CircleCI
       - run: git commit -m 'circleci/generating README file'
       - run: git push
