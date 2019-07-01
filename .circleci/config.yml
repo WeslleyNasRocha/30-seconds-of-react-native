@@ -36,4 +36,6 @@ jobs:
       - run: yarn linter
       - run: yarn extractor
       - run: yarn builder
-      - run: ls
+      - run: git add README.md
+      - run: git commit -m 'circleci/generating README file'
+      - run: git push
