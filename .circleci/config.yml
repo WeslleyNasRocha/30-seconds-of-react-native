@@ -33,5 +33,7 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      # run tests!
-      - run: yarn lint
+      - run: yarn linter
+      - run: yarn extractor
+      - run: yarn builder
+      - run: git add ./README.MD

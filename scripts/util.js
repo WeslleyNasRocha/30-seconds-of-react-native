@@ -21,6 +21,7 @@ const readSnippets = () =>
   attempt('read snippets', () =>
     fs
       .readdirSync(SNIPPETS_PATH)
+      .filter(f => f.match(/.*\.md$/))
       .sort((a, b) => (a.toLowerCase() < b.toLowerCase() ? -1 : 1))
       .reduce((acc, name) => {
         acc[name] = fs.readFileSync(path.join(SNIPPETS_PATH, name), 'utf8').replace(/\r\n/g, '\n');
