@@ -36,4 +36,4 @@ jobs:
       - run: yarn linter
       - run: yarn extractor
       - run: yarn builder
-      - run: git add ./README.MD
+      - run: ls
