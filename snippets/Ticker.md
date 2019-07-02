@@ -4,7 +4,7 @@ Renders a ticker component.
 
 * Use the `React.useState()` hook to initialize the `ticker` state variable to `0`.
 * Define two methods, `tick` and `reset`, that will periodically increment `timer` based on `interval` and reset `interval` respectively.
-* Return a `<div>` with two `<button>` elements, each of which calls `tick` and `reset` respectively.
+* Return a `<View>` with two `<Button>` elements, each of which calls `tick` and `reset` respectively.
 
 ```jsx
 function Ticker(props) {
@@ -25,17 +25,17 @@ function Ticker(props) {
   };
 
   return (
-    <div>
-      <span style={{ fontSize: 100 }}>{ticker}</span>
-      <button onClick={tick}>Tick!</button>
-      <button onClick={reset}>Reset</button>
-    </div>
+    <View>
+      <Text style={{ fontSize: 100 }}>{ticker}</Text>
+      <Button onClick={tick}>Tick!</Button>
+      <Button onClick={reset}>Reset</Button>
+    </View>
   );
 }
 ```
 
 ```jsx
-ReactDOM.render(<Ticker times={5} interval={1000} />, document.getElementById('root'));
+<Ticker times={5} interval={1000} />
 ```
 
 <!-- tags: visual,state -->
