@@ -2,9 +2,9 @@
 
 Renders a ticker component.
 
-* Use the `React.useState()` hook to initialize the `ticker` state variable to `0`.
-* Define two methods, `tick` and `reset`, that will periodically increment `timer` based on `interval` and reset `interval` respectively.
-* Return a `<View>` with two `<Button>` elements, each of which calls `tick` and `reset` respectively.
+- Use the `React.useState()` hook to initialize the `ticker` state variable to `0`.
+- Define two methods, `tick` and `reset`, that will periodically increment `timer` based on `interval` and reset `interval` respectively.
+- Return a `<View>` with two `<Button>` elements, each of which calls `tick` and `reset` respectively.
 
 ```jsx
 function Ticker(props) {
@@ -27,8 +27,8 @@ function Ticker(props) {
   return (
     <View>
       <Text style={{ fontSize: 100 }}>{ticker}</Text>
-      <Button onClick={tick}>Tick!</Button>
-      <Button onClick={reset}>Reset</Button>
+      <Button onPress={tick} title="Tick!" />
+      <Button onPress={reset} title="Reset!" />
     </View>
   );
 }
