@@ -46,5 +46,5 @@ jobs:
       - run: git config --global -l
       - run: git config --global user.email circleci@circleci
       - run: git config --global user.name CircleCI
-      - run: git commit -m 'circleci/generating README file'
+      - run: git commit -m 'circleci/generating README file' || export COMMIT_FAILED=true
       - run: git push
