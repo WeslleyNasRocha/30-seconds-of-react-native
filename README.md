@@ -8,7 +8,7 @@
 - Contributions welcome, please read the [contribution guide](CONTRIBUTING.md).
 - Snippets are written in **React 16.8.3**, **React-Native 0.59.9**, using **hooks**.
 
-**NOTE**: This repo has no affiliation with the original [30-seconds-of-code](https://github.com/30-seconds/30-seconds-of-code), was based on [30-seconds-of-react](https://github.com/30-seconds/30-seconds-of-react) but has no affiliation with it whatsoever
+**NOTE**: This repo has no affiliation with the original [30 Seconds of Code](https://github.com/30-seconds/30-seconds-of-code), was based on [30 Seconds of React](https://github.com/30-seconds/30-seconds-of-react) but has no affiliation with it whatsoever
 
 ### Prerequisites
 
@@ -33,7 +33,7 @@ import './MyComponentStyle';
 - [30 Seconds of Code](https://30secondsofcode.org)
 - [30 Seconds of CSS](https://30-seconds.github.io/30-seconds-of-css/)
 - [30 Seconds of Interviews](https://30secondsofinterviews.org/)
-- [30-seconds-of-react](https://github.com/30-seconds/30-seconds-of-react)
+- [30 Seconds of React](https://github.com/30-seconds/30-seconds-of-react)
 
 ## Table of Contents
 
